@@ -7,11 +7,23 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.icon {
+ 
+  border: 1rem solid lightgray;
+  border-top: 1rem solid dodgerblue;  
+  animation: spin 2s linear infinite;
 }
+.con{
+  border-left-style:  solid;
+  background-color: #61dafb;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 .App-header {
   background-color: #282c34;
